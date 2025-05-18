@@ -4,125 +4,76 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Vogin Productions</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
   <style>
-    :root {
-      --primary: #1e1e1e;
-      --accent: #f2c94c;
-      --bg: #fff;
-      --text: #333;
-    }
-
     body {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: var(--bg);
-      color: var(--text);
+      font-family: 'Open Sans', sans-serif;
+      background-color: #f8f8f8;
+      color: #333;
     }
 
     header {
-      background-color: var(--primary);
-      color: white;
-      padding: 2.5rem 1rem;
+      background-color: #000;
+      color: #fff;
+      padding: 2rem;
       text-align: center;
     }
 
     header h1 {
-      font-size: 2.8rem;
-      margin-bottom: 0.5rem;
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      margin: 0;
     }
 
-    header p {
-      font-size: 1.2rem;
-      color: #ccc;
-    }
-
-    section {
-      padding: 3rem 1.5rem;
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    .section-title {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-      color: var(--primary);
-      border-left: 5px solid var(--accent);
-      padding-left: 1rem;
-    }
-
-    .services ul {
-      list-style-type: square;
-      padding-left: 2rem;
-    }
-
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 1rem;
-    }
-
-    .gallery img {
-      width: 100%;
-      border-radius: 8px;
-      object-fit: cover;
-      height: 200px;
-    }
-
-    .team-grid {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1.5rem;
-    }
-
-    .team-member {
-      flex: 1 1 200px;
-      border: 1px solid #eee;
-      border-radius: 10px;
-      padding: 1rem;
+    nav {
+      background-color: #111;
       text-align: center;
+      padding: 1rem 0;
     }
 
-    .team-member img {
-      border-radius: 50%;
-      width: 100px;
-      height: 100px;
-      object-fit: cover;
-      margin-bottom: 0.5rem;
-    }
-
-    .contact p {
-      margin-bottom: 0.5rem;
-    }
-
-    .socials {
-      text-align: center;
-      margin-top: 1rem;
-    }
-
-    .socials a {
-      color: var(--primary);
-      margin: 0 0.5rem;
-      font-size: 1.4rem;
+    nav a {
+      color: #fff;
+      margin: 0 1rem;
       text-decoration: none;
+      font-weight: bold;
     }
 
-    footer {
-      background-color: var(--primary);
+    .hero {
+      text-align: center;
+      padding: 4rem 2rem;
+      background-image: url('https://images.unsplash.com/photo-1596496059864-7c44bbd83884?auto=format&fit=crop&w=1500&q=80');
+      background-size: cover;
+      background-position: center;
+      color: white;
+    }
+
+    .hero h2 {
+      font-size: 2rem;
+      background: rgba(0, 0, 0, 0.6);
+      display: inline-block;
+      padding: 1rem 2rem;
+      border-radius: 8px;
+    }
+
+    .content {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .footer {
+      background: #000;
       color: white;
       text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
+      padding: 1.5rem;
+      margin-top: 3rem;
     }
 
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 2rem;
-      }
-
-      .section-title {
-        font-size: 1.5rem;
-      }
+    .footer p {
+      margin: 0;
+      font-size: 0.9rem;
     }
   </style>
 </head>
@@ -130,74 +81,30 @@
 
   <header>
     <h1>Vogin Productions</h1>
-    <p>Creative Ad Shoots & Event Management</p>
+    <p>Ad Shoots | Event Management | Visual Storytelling</p>
   </header>
 
-  <section>
-    <h2 class="section-title">About Us</h2>
-    <p>Vogin Productions is a dynamic media and event management company based in Mumbai and Trivandrum. We specialize in high-end ad shoots, creative direction, and premium event execution. Our team blends vision with precision to craft memorable brand stories and experiences.</p>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Portfolio</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <section class="hero">
+    <h2>We Create Visual Magic</h2>
   </section>
 
-  <section class="services">
-    <h2 class="section-title">Our Services</h2>
-    <ul>
-      <li>Ad Shoot Production</li>
-      <li>Corporate & Social Event Management</li>
-      <li>Branding & Creative Consulting</li>
-      <li>Photography & Cinematography</li>
-      <li>Talent Management</li>
-    </ul>
+  <section class="content">
+    <h3>Welcome</h3>
+    <p>Vogin Productions is based in Trivandrum and Mumbai, specializing in ad shoots and event management. We turn visions into unforgettable stories, with a team of passionate creators behind every frame.</p>
+    <p><strong>📍 Address:</strong> TC31 1371 1, Meleparambil House, Sivadasan Road, Chackai, Thiruvananthapuram, Kerala, 695024</p>
+    <p><strong>GSTIN:</strong> 32AAWFV6901B1Z6</p>
   </section>
 
-  <section class="gallery">
-    <h2 class="section-title">Gallery</h2>
-    <img src="https://via.placeholder.com/400x250?text=Ad+Shoot+1" alt="Ad Shoot 1">
-    <img src="https://via.placeholder.com/400x250?text=Event+2" alt="Event 2">
-    <img src="https://via.placeholder.com/400x250?text=Behind+Scenes" alt="Behind the Scenes">
-  </section>
-
-  <section class="team">
-    <h2 class="section-title">Our Team</h2>
-    <div class="team-grid">
-      <div class="team-member">
-        <img src="https://via.placeholder.com/100" alt="Team Member">
-        <h4>Rahul Sharma</h4>
-        <p>Creative Director</p>
-      </div>
-      <div class="team-member">
-        <img src="https://via.placeholder.com/100" alt="Team Member">
-        <h4>Anjali Nair</h4>
-        <p>Event Manager</p>
-      </div>
-      <div class="team-member">
-        <img src="https://via.placeholder.com/100" alt="Team Member">
-        <h4>Sameer Das</h4>
-        <p>Media Producer</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="contact">
-    <h2 class="section-title">Contact Us</h2>
-    <p><strong>Address:</strong><br>
-      TC31 1371 1, Meleparambil House,<br>
-      Sivadasan Road, Chackai,<br>
-      Thiruvananthapuram, Kerala, 695024
-    </p>
-    <p><strong>GST:</strong> 32AAWFV6901B1Z6</p>
-    <p><strong>Email:</strong> hello@voginproductions.com</p>
-    <p><strong>Phone:</strong> +91-9876543210 (sample)</p>
-
-    <div class="socials">
-      <a href="#"><i class="fab fa-instagram"></i></a>
-      <a href="#"><i class="fab fa-facebook"></i></a>
-      <a href="#"><i class="fab fa-youtube"></i></a>
-    </div>
-  </section>
-
-  <footer>
-    &copy; 2025 Vogin Productions. All rights reserved.
-  </footer>
+  <div class="footer">
+    <p>&copy; 2025 Vogin Productions. All rights reserved.</p>
+  </div>
 
 </body>
 </html>
