@@ -1,110 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Vogin Productions</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VOGIN Productions</title>
   <style>
     body {
       margin: 0;
-      font-family: 'Open Sans', sans-serif;
-      background-color: #f8f8f8;
-      color: #333;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #3d4d3d; /* olive green */
+      color: #ffffff;
+      line-height: 1.6;
+      font-size: 18px;
     }
-
-    header {
-      background-color: #000;
-      color: #fff;
-      padding: 2rem;
-      text-align: center;
-    }
-
-    header h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: 2.5rem;
-      margin: 0;
-    }
-
-    nav {
-      background-color: #111;
-      text-align: center;
-      padding: 1rem 0;
-    }
-
-    nav a {
-      color: #fff;
-      margin: 0 1rem;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .hero {
-      text-align: center;
-      padding: 4rem 2rem;
-      background-image: url('https://images.unsplash.com/photo-1596496059864-7c44bbd83884?auto=format&fit=crop&w=1500&q=80');
-      background-size: cover;
-      background-position: center;
-      color: white;
-    }
-
-    .hero h2 {
-      font-size: 2rem;
-      background: rgba(0, 0, 0, 0.6);
-      display: inline-block;
-      padding: 1rem 2rem;
-      border-radius: 8px;
-    }
-
-    .content {
-      padding: 2rem;
-      max-width: 900px;
+    header, section, footer {
+      padding: 40px 20px;
+      max-width: 960px;
       margin: auto;
+    }
+    header {
       text-align: center;
     }
-
-    .footer {
-      background: #000;
-      color: white;
-      text-align: center;
-      padding: 1.5rem;
-      margin-top: 3rem;
+    h1, h2 {
+      color: #d4af37; /* golden highlight */
+      font-size: 32px;
     }
-
-    .footer p {
-      margin: 0;
-      font-size: 0.9rem;
+    .services ul, .team ul, .contact ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    .services li, .team li, .contact li {
+      margin-bottom: 10px;
+    }
+    .gallery iframe {
+      width: 100%;
+      height: 315px;
+      margin-bottom: 20px;
+    }
+    footer {
+      text-align: center;
+      border-top: 1px solid #888;
+      padding-top: 20px;
+    }
+    a {
+      color: #d4af37;
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>Vogin Productions</h1>
-    <p>Ad Shoots | Event Management | Visual Storytelling</p>
-  </header>
+<header>
+  <h1>VOGIN Productions</h1>
+  <p style="font-size: 20px;">Vision to Visuals</p>
+  <p style="font-size: 18px;">Minimal. Professional. Aesthetic.</p>
+</header>
 
-  <nav>
-    <a href="#">Home</a>
-    <a href="#">About</a>
-    <a href="#">Portfolio</a>
-    <a href="#">Contact</a>
-  </nav>
+<section id="about">
+  <h2>About Us</h2>
+  <p>
+    At VOGIN Productions, we interpret the vision of our clients to craft compelling visuals that amplify brand stories.
+    Our mission is to deliver innovative ad campaigns and impactful event experiences. We aim to expand regionally,
+    nurture creative talent, and redefine standards in the advertising industry. Our core values include integrity,
+    creativity, teamwork, and diligence.
+  </p>
+</section>
 
-  <section class="hero">
-    <h2>We Create Visual Magic</h2>
-  </section>
+<section class="services">
+  <h2>Our Services</h2>
+  <ul>
+    <li>Ad Production, Post-production, Event Management (Corporate & Social)</li>
+    <li>Branding and Creative Consulting</li>
+    <li>Photography and Cinematography</li>
+    <li>Talent Management</li>
+    <li>Concerts & Cultural Events</li>
+    <li>Digital Marketing, Social Media, Livestream</li>
+  </ul>
+</section>
 
-  <section class="content">
-    <h3>Welcome</h3>
-    <p>Vogin Productions is based in Trivandrum and Mumbai, specializing in ad shoots and event management. We turn visions into unforgettable stories, with a team of passionate creators behind every frame.</p>
-    <p><strong>📍 Address:</strong> TC31 1371 1, Meleparambil House, Sivadasan Road, Chackai, Thiruvananthapuram, Kerala, 695024</p>
-    <p><strong>GSTIN:</strong> 32AAWFV6901B1Z6</p>
-  </section>
+<section class="gallery">
+  <h2>Gallery</h2>
+  <iframe src="https://www.youtube.com/embed/brefbEwR4rQ" title="Starbucks Ad" allowfullscreen></iframe>
+  <iframe src="https://www.youtube.com/embed/wnc-9vuRQyI" title="Ravam" allowfullscreen></iframe>
+  <iframe src="https://www.youtube.com/embed/A3lgKzmn4wo" title="Vanamali" allowfullscreen></iframe>
+</section>
 
-  <div class="footer">
-    <p>&copy; 2025 Vogin Productions. All rights reserved.</p>
-  </div>
+<section id="upcoming">
+  <h2>Upcoming Work</h2>
+  <p>Tanishq – Coming Soon</p>
+</section>
+
+<section class="team">
+  <h2>Our Team</h2>
+  <ul>
+    <li>Abhilash Shaji - Company Advisor</li>
+    <li>Salakha Shalu - Legal Advisor</li>
+    <li>Neeraj AV - Content Writer</li>
+    <li>Sreelakshmi KS - PR Communication Strategist</li>
+    <li>Shilpa Diwakar - Celebrity Makeup Artist</li>
+    <li>Nidheesh Vijayan - Associate Director</li>
+    <li>Gowtham Krishna - Assistant Director</li>
+    <li>Arjun Jothi - Associate Cinematographer</li>
+    <li>Adarsh Shreyas - Event Co-ordinator</li>
+  </ul>
+</section>
+
+<section id="why">
+  <h2>Why VOGIN Productions</h2>
+  <ul>
+    <li>Creative concepts with strategic execution</li>
+    <li>Professional team with industry experience</li>
+    <li>Versatile services from production to digital marketing</li>
+    <li>Commitment to quality and aesthetics</li>
+  </ul>
+</section>
+
+<section class="contact">
+  <h2>Contact Us</h2>
+  <ul>
+    <li>Address: TC31 1371-1, Sivadasan Road, Chackai, Trivandrum, Kerala 695024</li>
+    <li>GST No: 32AAWFV6901B1Z6</li>
+    <li>Email: <a href="mailto:voginproduction@gmail.com">voginproduction@gmail.com</a></li>
+    <li>Phone: +91-XXXXXXXXXX (placeholder)</li>
+    <li>Instagram: <a href="https://www.instagram.com/voginproductions">@voginproductions</a></li>
+    <li>Facebook: <a href="https://www.facebook.com/share/19Vp8RRAy7">VOGIN Productions</a></li>
+    <li>YouTube: <a href="https://youtube.com/@voginproductions">@voginproductions</a></li>
+  </ul>
+</section>
+
+<footer>
+  <p>&copy; 2025 VOGIN Productions. All rights reserved.</p>
+</footer>
 
 </body>
 </html>
