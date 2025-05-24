@@ -8,9 +8,10 @@
   <style>
     body {
       margin: 0;
-      font-family: 'Open Sans', sans-serif;
+      font-family: 'Georgia', serif;
       scroll-behavior: smooth;
-      background-color: #ffffff;
+      background-color: #3d4d3d;
+      color: #f5f5f5;
     }
     section {
       padding: 80px 20px;
@@ -18,34 +19,37 @@
       margin: 60px auto;
     }
     header {
-      background-color: #3d4d3d; /* Olive green */
+      background-color: #3d4d3d;
       color: #ffffff;
       text-align: center;
-      padding: 100px 20px;
-      font-family: 'Montserrat', sans-serif;
+      padding: 60px 20px 20px;
+    }
+    header img {
+      width: 120px;
+      margin-bottom: 20px;
     }
     h1 {
-      font-size: 36px; /* Large font size */
-      margin-bottom: 10px;
+      font-size: 48px;
+      font-family: 'Georgia', serif;
+      margin: 0;
     }
     h2 {
-      color: #3d4d3d;
-      font-size: 22px;
+      color: #fff;
+      font-size: 26px;
+      font-family: 'Georgia', serif;
       margin-bottom: 20px;
-      font-family: 'Lato', sans-serif;
     }
     p, li {
-      font-size: 16px;
-      color: #3d4d3d;
+      font-size: 17px;
+      font-weight: 500;
     }
     .tagline {
-      font-family: 'Georgia', serif;
       font-style: italic;
-      font-size: 18px;
-      color: #ffffff;
+      font-size: 20px;
+      margin: 10px 0;
     }
     .white-bg {
-      background-color: white;
+      background-color: #ffffff;
       color: #3d4d3d;
       border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
@@ -55,53 +59,59 @@
       list-style-type: none;
       padding: 0;
     }
-    li {
-      margin-bottom: 10px;
-    }
     iframe {
       width: 100%;
       height: 315px;
       margin-bottom: 20px;
     }
-    .team-scroll {
-      display: flex;
-      flex-wrap: nowrap;
-      overflow-x: auto;
-      gap: 20px;
-      padding-bottom: 20px;
+    .team-accordion table {
+      width: 100%;
+      border-collapse: collapse;
     }
-    .team-scroll .member {
-      min-width: 220px;
-      flex: 0 0 auto;
-      background-color: #f4f4f4;
-      padding: 15px;
-      border-radius: 10px;
-      color: #3d4d3d;
+    .team-accordion td {
+      padding: 10px;
+      font-weight: 500;
+    }
+    .team-accordion summary {
+      cursor: pointer;
       font-weight: bold;
-      text-align: center;
+      margin-bottom: 10px;
     }
-    .team-scroll .member img {
+    .founders {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .founder {
+      text-align: center;
+      max-width: 160px;
+    }
+    .founder img {
       width: 100px;
       height: 100px;
       object-fit: cover;
       border-radius: 50%;
-      margin-bottom: 10px;
     }
-    .location-cards {
+    .social-icons {
       display: flex;
-      gap: 20px;
-      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 20px;
     }
-    .location-cards .card {
-      flex: 1 1 45%;
-      background-color: #f4f4f4;
-      padding: 20px;
-      border-radius: 10px;
+    .social-icons a {
+      font-size: 30px;
+      transition: color 0.3s;
     }
+    .social-icons a[aria-label="Instagram"] { color: #C13584; }
+    .social-icons a[aria-label="Facebook"] { color: #3b5998; }
+    .social-icons a[aria-label="YouTube"] { color: #FF0000; }
+    .social-icons a[aria-label="LinkedIn"] { color: #0077B5; }
+    .social-icons a[aria-label="WhatsApp"] { color: #25D366; }
     footer {
       text-align: center;
       padding: 40px 20px;
-      background-color: #3d4d3d;
+      background-color: #2c3e2c;
       color: white;
     }
     footer ul {
@@ -116,49 +126,25 @@
       color: #d4af37;
       text-decoration: none;
     }
-    .social-icons {
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-      margin-top: 20px;
-    }
-    .social-icons a {
-      font-size: 32px;
-      transition: color 0.3s;
-    }
-    .social-icons a[aria-label="Instagram"] {
-      color: #C13584;
-    }
-    .social-icons a[aria-label="Instagram"]:hover {
-      color: #e1306c;
-    }
-    .social-icons a[aria-label="Facebook"] {
-      color: #3b5998;
-    }
-    .social-icons a[aria-label="Facebook"]:hover {
-      color: #1e3c72;
-    }
-    .social-icons a[aria-label="YouTube"] {
-      color: #FF0000;
-    }
-    .social-icons a[aria-label="YouTube"]:hover {
-      color: #cc0000;
-    }
   </style>
 </head>
 <body>
 
 <header>
+  <img src="logo FINAL.jpg" alt="VOGIN Logo">
   <h1>VOGIN Productions</h1>
   <p class="tagline">Vision to Visuals</p>
-  <p>
-    <a href="#portfolio">Our Work</a> | <a href="#contact">Contact Us</a>
-  </p>
+  <p>Thiruvananthapuram| Bengaluru| Mumbai</p>
+  <p><a href="#portfolio">Our Work</a> | <a href="#contact">Contact Us</a></p>
 </header>
 
 <section class="white-bg" id="about">
   <h2>About Us</h2>
-  <p>VOGIN Productions is a full-service creative agency delivering high-impact films, photography, digital content, and event experiences. We specialize in ad production, branding, cinematography, post-production, and digital marketing. Our team is driven by creativity, authenticity, and a passion for visual storytelling. We aim to inspire, influence, and innovate. Our mission is to transform ideas into compelling visuals, and our vision is to be a leader in the industry through excellence and originality.</p>
+  <p>At VOGIN Productions, our story began with a shared vision — to transform imagination into captivating visuals that leave a lasting impression. Born out of a passion for storytelling and a deep love for visual media, our journey came together to bridge the gap between artistic expression and commercial excellence.</p>
+  <p>Our team brings together a diverse blend of talent. With backgrounds in cinematography, brand strategy, event curation, creative direction, and digital media, from the team to each and every client plays a vital role in shaping our collective identity. From scripting concepts to executing large-scale events and ad shoots, we lead with experience and empathy — and we treat every project like a personal mission.</p>
+  <p>The road hasn’t been easy. We’ve faced production constraints, creative challenges, and tight deadlines — but every obstacle only refined our skills and we believe our evolution reflects our resilience. We are a passionate team of creators delivering ad productions, post-production services, live concerts, corporate events, and strategic branding for a digital-first world.</p>
+  <p>Our mission is to craft authentic visual narratives that engage, influence, and resonate. Our vision is to become a creative powerhouse recognized for blending aesthetics, professionalism, and innovation — not just in India, but globally.</p>
+  <p>Whether it's a high-end commercial, a cultural festival, or a digital campaign — VOGIN Productions is here to make your vision visual.</p>
 </section>
 
 <section class="white-bg" id="services">
@@ -178,45 +164,48 @@
   <iframe src="https://www.youtube.com/embed/brefbEwR4rQ" title="Starbucks Ad" allowfullscreen></iframe>
   <iframe src="https://www.youtube.com/embed/wnc-9vuRQyI" title="Ravam" allowfullscreen></iframe>
   <iframe src="https://www.youtube.com/embed/A3lgKzmn4wo" title="Vanamali" allowfullscreen></iframe>
+  <iframe src="https://www.youtube.com/embed/hnsnxVDtz3U" title="New Project 1" allowfullscreen></iframe>
+  <iframe src="https://www.youtube.com/embed/BU94467Gr5A" title="New Project 2" allowfullscreen></iframe>
+</section>
+
+<section class="white-bg" id="founders">
+  <h2>Founders</h2>
+  <div class="founders">
+    <div class="founder">
+      <img src="Varun photo website .heic" alt="Varun Anil">
+      <p>Varun Anil<br><small>Co-Founder & Creative Head</small></p>
+    </div>
+    <!-- Add more founder blocks here -->
+  </div>
 </section>
 
 <section class="white-bg" id="team">
   <h2>Our Team</h2>
-  <div class="team-scroll">
-    <div class="member">
-      <img src="https://via.placeholder.com/100" alt="Varun Anil">
-      Varun Anil<br><small>Co-Founder & Creative Head</small>
-    </div>
-    <div class="member">
-      <img src="https://via.placeholder.com/100" alt="Devadathan P">
-      Devadathan P<br><small>Co-Founder & Visual Lead</small>
-    </div>
-    <div class="member">
-      <img src="https://via.placeholder.com/100" alt="Akash S">
-      Akash S<br><small>Co-Founder & Head of Operations</small>
-    </div>
-    <div class="member">
-      <img src="https://via.placeholder.com/100" alt="Arif Rashid">
-      Arif Rashid<br><small>Co-Founder & Financial Navigator</small>
-    </div>
-    <div class="member">Abhilash Shaji<br><small>Company Advisor</small></div>
-    <div class="member">Salakha Shalu<br><small>Legal Advisor</small></div>
-    <div class="member">Neeraj AV<br><small>Content Writer</small></div>
-    <div class="member">Sreelakshmi KS<br><small>PR Communication Strategist</small></div>
-    <div class="member">Sneha Shivananda<br><small>Social Media Manager</small></div>
-    <div class="member">Fathima Zereena C M<br><small>Marketing Manager</small></div>
-    <div class="member">Shilpa Diwakar<br><small>Celebrity Makeup Artist</small></div>
-    <div class="member">Nidheesh Vijayan<br><small>Associate Director</small></div>
-    <div class="member">Gowtham Krishna<br><small>Assistant Director</small></div>
-    <div class="member">Arjun Jyothi<br><small>Associate Cinematographer</small></div>
-    <div class="member">Adarsh Shreyas<br><small>Event Co-ordinator</small></div>
-    <div class="member">Shano G Francis<br><small>Event Co-ordinator</small></div>
+  <div class="team-accordion">
+    <details>
+      <summary>View Team</summary>
+      <table>
+        <tr><td>Abhilash Shaji</td><td>Company Advisor</td></tr>
+        <tr><td>Salakha Shalu</td><td>Legal Advisor</td></tr>
+        <tr><td>Neeraj AV</td><td>Content Writer</td></tr>
+        <tr><td>Sreelakshmi KS</td><td>PR Communication Strategist</td></tr>
+        <tr><td>Sneha Shivananda</td><td>Social Media Manager</td></tr>
+        <tr><td>Fathima Zereena C M</td><td>Marketing Manager</td></tr>
+        <tr><td>Shilpa Diwakar</td><td>Celebrity Makeup Artist</td></tr>
+        
+        <tr><td>Gowtham Krishna</td><td>Video Editor </td></tr>
+        
+        <tr><td>Parvathikrishna</td><td>Web developer </td></tr>
+        <tr><td>Shano G Francis</td><td>Event Co-ordinator</td></tr>
+      </table>
+    </details>
   </div>
 </section>
 
 <section class="white-bg" id="upcoming">
   <h2>Upcoming Work</h2>
   <p>Stay tuned for our exciting collaboration with <strong>Tanishq</strong> – a creative journey in progress!</p>
+  <img src="tan.jpeg" alt="Tanishq Logo" style="display:block;margin:20px auto;max-width:200px;">
 </section>
 
 <section class="white-bg" id="why">
@@ -234,11 +223,13 @@
   <p><strong>Address:</strong> TC31 1371-1, Sivadasan Road, Chackai, Trivandrum, Kerala 695024</p>
   <p><strong>GST No:</strong> 32AAWFV6901B1Z6</p>
   <p><strong>Email:</strong> <a href="mailto:voginproduction@gmail.com">voginproduction@gmail.com</a></p>
-  <p><strong>Phone:</strong> +91-XXXXXXXXXX (placeholder)</p>
+  <p><strong>Phone:</strong> +91 99952 27055</p>
   <div class="social-icons">
     <a href="https://www.instagram.com/voginproductions" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
     <a href="https://www.facebook.com/share/19Vp8RRAy7" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
     <a href="https://youtube.com/@voginproductions" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+    <a href="https://www.linkedin.com/in/vogin-production-058bb7366" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+    <a href="https://wa.me/919995227055" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
   </div>
 </section>
 
@@ -247,6 +238,7 @@
     <li><a href="#about">About</a></li>
     <li><a href="#services">Services</a></li>
     <li><a href="#portfolio">Portfolio</a></li>
+    <li><a href="#founders">Founders</a></li>
     <li><a href="#team">Team</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
@@ -255,4 +247,3 @@
 
 </body>
 </html>
-
